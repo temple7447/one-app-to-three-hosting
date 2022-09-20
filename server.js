@@ -15,6 +15,7 @@ const MainRouter = require("./Router/main")
 const passport = require("passport");
 const localStrategy = require("passport-local").Strategy
 const StaffRouter = require("./Router/Staff")
+const DepartmentRouter = require("./Router/department")
 
 
 // cor middleware
@@ -85,7 +86,7 @@ app.use("/Admin", AdminRouter)
 app.use("/", StudentRouter)
 app.use('/department',StaffRouter)
 app.use('/',MainRouter)
-// app.use('/',DepartmentRouter)
+app.use('/',DepartmentRouter)
 // app.use('/api',NewsRouter)
 // app.use('/Admin',searchRouter)
 // app.use('/Admin',NotificationRouter)
