@@ -5,10 +5,10 @@ const staffUser = require("../Model/register")
 const  localStrategy = require('passport-local').Strategy
 const bcrypt = require('bcrypt')
 const passport = require('passport')
-const {isLoggingout } = require('../config/auth')
+// const {isLoggingout } = require('../config/auth')
 
 
-router.get('/stafflogin',isLoggingout,((req,res)=>{
+router.get('/stafflogin',((req,res)=>{
 
   res.render("login",{layout:"index"})
 
