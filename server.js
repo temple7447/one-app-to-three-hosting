@@ -3,11 +3,30 @@ const app = express();
 const path = require("path")
 const hbs = require("express-handlebars").engine
 const session = require("express-session");
+const cors = require("cors")
+const morgan = require("morgan")
+const mongoose = require("mongoose")
+const db = require("./db")()
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
+const handlebars = require('handlebars')
 
 
+// cor middleware
+app.use(cors())
 
-app.engine("hbs", hbs({extname:"hbs"}))
-app.set("view engine", ".hbs")
+app.use(session({
+    secret:'temple',
+    resave:false,
+    saveUninitialized:true,
+}));
+
+// morgan
+app.use(morgan('dev'));
+app.engine('.hbs', hbs({
+    layoutsDir: `${__dirname}/views/layouts`,
+     extname:'.hbs',
+     handlebars: allowInsecurePrototypeAccess(handlebars)}))
+app.set('view engine', '.hbs')
 
 
 
