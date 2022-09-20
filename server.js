@@ -10,6 +10,8 @@ const db = require("./db")()
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 const handlebars = require('handlebars')
 const AdminRouter = require("./Router/Admin")
+const StudentRouter = require("./Router/Student")
+const MainRouter = require("./Router/main")
 
 
 // cor middleware
@@ -41,6 +43,15 @@ app.get("/",(req,res)=>{
     res.render("index",{layout:"index"})
 })
 app.use("/Admin", AdminRouter)
+app.use("/", StudentRouter)
+// app.use('/department',StaffRouter)
+app.use('/',MainRouter)
+// app.use('/',DepartmentRouter)
+// app.use('/api',NewsRouter)
+// app.use('/Admin',searchRouter)
+// app.use('/Admin',NotificationRouter)
+// app.use('/Admin',EditRouter)
+// app.use('/Admin',ClassRouter)
 
 const PORT = process.env.PORT || 3004
 

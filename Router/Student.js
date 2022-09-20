@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const mongoose = require("mongoose");
-const multer = require("multer");
-const upload = multer({ dest: 'uploads/' })
-const connection = require('../config/sql')
+// const multer = require("multer");
+// const upload = multer({ dest: 'uploads/' })
 const MatriculationMorning = require('../Model/MatriculationModelMorning')
 const MatriculationEvening = require('../Model/MatriculationModelEvening')
 const General = require('../Model/MorningHnd2Model')

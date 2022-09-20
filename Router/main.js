@@ -1,20 +1,20 @@
 const express = require('express')
 const router = express.Router()
 const mongoose = require("mongoose");
-const request = require('request')
+// const request = require('request')
 const Notification = require('../Model/Notification')
 const Edit = require('../Model/Edit')
 const EditImage = require('../Model/Image')
 const Email = require('../Model/emailnews')
 
-const APIKEY = "4391f42befbb4afab31db42c05367f1d"
-const APIURL = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=4391f42befbb4afab31db42c05367f1d"
+// const APIKEY = "4391f42befbb4afab31db42c05367f1d"
+// const APIURL = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=4391f42befbb4afab31db42c05367f1d"
 
-request(APIURL, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    console.log(body) // Print the google web page.
-  }
-})
+// request(APIURL, function (error, response, body) {
+//   if (!error && response.statusCode == 200) {
+//     console.log(body) // Print the google web page.
+//   }
+// })
 router.get('/',(req,res)=>{
 
 
