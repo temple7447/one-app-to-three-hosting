@@ -9,6 +9,7 @@ const mongoose = require("mongoose")
 const db = require("./db")()
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 const handlebars = require('handlebars')
+const AdminRouter = require("./Router/Admin")
 
 
 // cor middleware
@@ -39,6 +40,7 @@ app.use(express.urlencoded({extended:true}));
 app.get("/",(req,res)=>{
     res.render("index",{layout:"index"})
 })
+app.use("/Admin", AdminRouter)
 
 const PORT = process.env.PORT || 3004
 
