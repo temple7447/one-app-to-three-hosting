@@ -74,6 +74,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 
+// app.get("/admin/*",(req,res)=>{
+//     res.send("you are not suppose to be in the page")
+// })
 
 app.get("/",(req,res)=>{
     res.render("index",{layout:"index"})

@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const mongoose = require("mongoose");
-// const multer = require("multer");
-// const upload = multer({ dest: 'uploads/' })
+const AWS = require("aws-sdk");
+const s3 = new AWS.S3()
 const MatriculationMorning = require('../Model/MatriculationModelMorning')
 const MatriculationEvening = require('../Model/MatriculationModelEvening')
 const General = require('../Model/MorningHnd2Model')
@@ -21,6 +21,8 @@ const EveningHnd1Models = require('../Model/HND11')
 
 const Eveningnd2Models = require('../Model/ND22')
 const Eveningnd1Models = require('../Model/ND11')
+
+
 
 
 
