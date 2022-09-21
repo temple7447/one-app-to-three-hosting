@@ -13,6 +13,7 @@ body{
     overflow: hidden;
 }
 html{
+    scroll-padding: 50px;
     scroll-behavior: smooth;
   }
 ul{

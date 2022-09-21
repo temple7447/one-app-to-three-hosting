@@ -6,18 +6,12 @@
 button{
     border: none;
 }
-html{
-  scroll-behavior: smooth;
-}
 body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
     color:#000;
-    
-
 }
-
 .image{
     background-position: center;
     background-repeat: no-repeat;
