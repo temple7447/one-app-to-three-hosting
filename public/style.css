@@ -59,30 +59,6 @@ a,
     cursor: pointer;
 }
 
-#toggles span {
-    position: absolute !important;
-    width: 30px;
-    height: 4px;
-    color: #fff;
-    transition: all 0.5s;
-}
-
-#toggles span:nth-child(1) {
-    transform: translateY(-10px) !important;
-    width: 25px;
-    left: 4px;
-    color: white;
-    z-index: 10;
-}
-
-#toggles span:nth-child(2) {
-    transform: translateY(10px) !important;
-    width: 25px;
-    left: 4px;
-    color: white;
-    z-index: 10;
-}
-
 .thirdsection {
     background-image: url('/backgroundimage.jpg');
     background-position: center;
