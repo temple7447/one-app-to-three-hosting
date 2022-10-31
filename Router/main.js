@@ -15,51 +15,51 @@ const Email = require('../Model/emailnews')
 //     console.log(body) // Print the google web page.
 //   }
 // })
-router.get('/',(req,res)=>{
+router.get('/', (req, res) => {
 
 
 
-    Notification.find({},(err,inform)=>{
+    Notification.find({}, (err, inform) => {
 
-        if(err){
+        if (err) {
             console.log(err)
             res.status(500).send("it's a server err" + err)
-        }else{
-            Edit.find({},(err,informs)=>{
+        } else {
+            Edit.find({}, (err, informs) => {
 
-                if(err){
+                if (err) {
                     console.log(err)
                     res.status(500).send("it's a server err" + err)
-                }else{
-                    EditImage.find({},(err,photo)=>{
-                        if(err){
+                } else {
+                    EditImage.find({}, (err, photo) => {
+                        if (err) {
                             console.log(err)
-                            res.status(500).send("it's a server err" + err) 
-                        }else{
-                            res.render('index',{layout:'index',list:inform,editlist:informs,photo:photo, title:"COMPUTERLAB"})
+                            res.status(500).send("it's a server err" + err)
+                        } else {
+                            res.render('index', { layout: 'index', list: inform, editlist: informs, photo: photo, title: "COMPUTERLAB" })
 
                         }
                     })
-                    
-            
+
+
                 }
-            
+
             })
-            
-            
-    
+
+
+
         }
-    
+
     })
-    
+
 })
-router.get('/assignment',(req,res)=>{
-    
-    res.render('assignment',{layout:'register.hbs'})
+router.get('/assignment', (req, res) => {
+
+    res.render('assignment', { layout: 'index' })
 })
-router.get('/contact',(req,res)=>{
-    
-    res.render('contact',{layout:'contact'})
+router.get('/contact', (req, res) => {
+
+    res.render('contact', { layout: 'contact' })
 })
 
 // router.get('/search',((req,res)=>{
@@ -67,19 +67,19 @@ router.get('/contact',(req,res)=>{
 //     console.log(search)
 // }))
 
-router.post("/email",(req,res)=>{
-    const {email} = req.body;
+router.post("/email", (req, res) => {
+    const { email } = req.body;
     const Emailnew = new Email({
-        email:email
+        email: email
     })
 
     Emailnew.save("")
-    .then(()=>{
-        console.log("we got it thanks")
-        res.redirect('/');
-    }).catch((err)=>{
-        console.log(err)
-    })
+        .then(() => {
+            console.log("we got it thanks")
+            res.redirect('/');
+        }).catch((err) => {
+            console.log(err)
+        })
 
 })
 

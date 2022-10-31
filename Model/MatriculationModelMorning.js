@@ -5,8 +5,6 @@ const MatriculationModelMorning = new Schema({
     
     matriculation:{
        type:String,
-        required:true,
-        unique:true
     }
     
 })

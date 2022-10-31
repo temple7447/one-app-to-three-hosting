@@ -1,0 +1,27 @@
+@media (min-width:475px) {
+    .titleheader {
+        font-size: 30px;
+    }
+    #home {
+        width: 100vw;
+    }
+    .homecontent p {
+        margin-top: 20px;
+        font-size: 18px;
+        width: 300px !important;
+    }
+    .btn {
+        position: relative;
+        left: 3% !important;
+    }
+    .details {
+        left: 40% !important;
+    }
+    .courses {
+        height: 300px !important;
+    }
+    .learning {
+        height: 500px !important;
+    }
+    /* footer */
+}

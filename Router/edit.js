@@ -5,7 +5,7 @@ const Edit = require('../Model/Edit')
 const fs = require("fs");
 const MatriculationMorning = require('../Model/MatriculationModelMorning')
 const General = require('../Model/MorningHnd2Model')
-const multer  = require('multer');
+// const multer  = require('multer');
 const EditImage = require('../Model/Image')
 
 
@@ -96,18 +96,30 @@ router.post('/homepageimage',(req,res)=>{
 
 
 router.post('/matriculation',(req,res)=>{
-  const {matriculation1} = req.body;
-  const User = new MatriculationMorning({
-    matriculation:matriculation1
+  const {matriculation} = req.body;
+  
+  MatriculationMorning.findOne({matriculation:matriculation})
+  .then((user)=> {
+    if(user){
+    res.redirect("/admin/edit")}
+    const User = new MatriculationMorning({
+      matriculation:matriculation
+    })
+   
+      User.save()
+      .then(()=>{
+        console.log('it has be created')
+        res.redirect('/admin')
+      })
+      .catch((err)=>{
+        console.log(err.keyPattern)
+      })
+  
+  }).catch((err)=>console.log(err))
+
+  
   })
-  User.save().then((created)=>{
-    console.log('it has be created')
-    res.redirect('/admin/edit')
-  })
-  .catch((err)=>{
-    console.log(err)
-  })
-})
+  
 
 
 router.post('/delete',(req,res)=>{

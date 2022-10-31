@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
  
-const staffUser = new mongoose.Schema({
+const staffUserModel = new mongoose.Schema({
     username:{
         type:String,
         required:true,
@@ -45,8 +45,8 @@ const staffUser = new mongoose.Schema({
 
 })
 
+const staffUser = mongoose.model("Register",staffUserModel )
 
 
-
-module.exports = mongoose.model('Register', staffUser)
+module.exports = staffUser;
 

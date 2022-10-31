@@ -1,6 +1,11 @@
 <section class="container my-sm-2">
   <div><h1 class="text-center;" style="font-family:Georgia, 'Times New Roman', Times, serif;text-align:center; font-weight:700;">STAFF REGISTER</h1></div>
 <form class="row g-2 d-flex bg-dark text-white py-3 px-2" method="POST" action="/department/staffregister">
+<div>
+ {{#each errors}}
+ <ul>{{this.errors}}</ul>
+ {{/each}}
+</div>
 <div class="col-md-12">
          <label for="userName" class="form-label">User Name</label>
     <input type="text" class="form-control"  name="username" placeholder="User name" aria-label="User name">
@@ -18,7 +23,7 @@
     <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="please enter your email account name">
   </div>
    <div class="col-md-12">
-    <label class="program" for="mat">DEPARTMENT</label>
+    <label class="program" for="mat">DEPARTMENT</label> 
      <select class="form-control department" name="department">
        <option value="CIVIL">CIVIL ENGINEERING</option>
       <option value="CHEMICAL">CHEMICAL ENGINEERING</option>

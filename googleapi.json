@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dulcet-day-364423",
+  "private_key_id": "af4699f4c07cfb518e87b90d289aac9eb9cf6fee",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCwFaDdAE3x9lcn\npi5PB/tZiqBG4SwgHKrUyNVlbrq8hDP4lBRvc4Fv/mglYEkBTCIh+myKU+doZY32\n9LWUV3zdiKv1zxqAtECHPVQw9mSWHCN7CqheQwMj+6xjtH2GLQmwUSWnvc6+LYYc\n1MgfKU6p/SB9lr5kWZZKqh2Ueyud9EZfyDb+ucBLR3/QKA5AGN9ex2ZAtYpZJYiN\nTbFaWGKbCyeZAuC2gB8Tkzg4jnS+VV32OO9iAdt8FYkM5X4JeJw75iOwN9jl5iXM\nV45UTSnm1ZsD4SUbN2C1Wjntk09RGYkk7ZArs7s2SCLT0KBGJMY26II/1lXKB9LE\nV+vxLTJDAgMBAAECggEAF5k7ybKYlPognGyN80M3a+eDayG9XKu1jLaXvDQsAZzZ\ngZHdmpbefN3EeRHfkYrHCPUQu98vzxLL2meEYwDwopixAcyuRBvO3sZuNJuo8mHg\nssTvDfxUJ5aQotIrKngkaXAOqF2XShnmyea4eqNPasJvqsqGR1j8UT2y9islttGE\n/f/OdBaLxu1mJTPD1sdHaFDXnWLcq5QPVrII1nRgwdM2eLRjq7a+xaVxFJpi+oDW\n3P7uqi172WoEjGGULg1Cgsd7S9ArITL/tf4n7VhS6YnH/RTqvEewZsjdZKAcbdRp\nXHcuvqtP8d9fu4WBul7pXp8l+vf6oXaHNLtJj9oIWQKBgQDVho9lRA7NVRMCNEBJ\nZjT+WIvRI/7ciYf/B0J8c6+kNhDTQbh9zriN29qsnG3wiyue8U8y+GcRW8B2ukJS\nNYEo2xnWVCsdyHU8OQ/FUF4CK3wgngwMKrFtnh5NiQXv9NPuU4/Ec+tk4Rc1yu0J\nHFIPyuqZFsq6mpNDtgd6mJ0J+QKBgQDTHHClbee6iNnxxmJlwQeLU1Z7ZK6m+lP1\neHXUO0e7i/ZfFrrbc/Z/p7SyPNP+i9Kj8R+g2yLjnPjgfWRPTi4pecHtuwF3p2/i\nmsogZuJ5SIo/2dp8M9W1f/DIcg1H8pr1xglqN4fdyViJvC6/Ym08gBj/5+iZIJr1\noAr6SteNGwKBgQCAtgEgSNsnWP4BWR/bXtnY6+U0J5+Mrvake2rPfCjHMrQHtFkS\ntRa4pGt3m0AGPM4JnGpiTixK4WTt7K7nwUrfJtu3P7tR07EfoUHpbd2NL0s+miam\n+uFDM4oOsOc8UvehdQt3n2yovapxCabC1Ch/TpEFwSBpRZ45tbNiajZXeQKBgQC4\nbsU+0Wi8Pyjgn6eBLAVSRCluvcQTnujQsD+IfY2qnJlN84aliIbWeYZUnO28GR2a\nGmK+XhP59D49qW6EFlIf6/5vmYurpD0MJJznd9rtiGE3bTUCgyp2WWLbS0CtFZcp\nlqzM/dyV93yBQEU68FtsmqC8mTdM5/5ZDkvo5I+x9wKBgQCWTwVnuX/KFFOXzAMg\nG9mbwp88GkMz/SvJ8CQt1c5QDMgTYd8FZXxo7YSiuFsvmZaCnAeO6J0T77PFZolP\nCTSdgxjCZPXMVLdZCYdEoENg7Pa29YaiU9GS97Q34sFPIhDSlZs15XAxidHtQt9Q\nU3gU8D4x9y8jK09kv+anWIfklA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "googledriveapi@dulcet-day-364423.iam.gserviceaccount.com",
+  "client_id": "107844674993263524706",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/googledriveapi%40dulcet-day-364423.iam.gserviceaccount.com"
+}

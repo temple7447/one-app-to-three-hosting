@@ -1,0 +1,61 @@
+@media (min-width:640px) {
+    .titleheader {
+        font-size: 30px;
+    }
+    #home {
+        width: 100vw;
+    }
+    .homecontent p {
+        margin-top: 20%;
+        font-size: 25px;
+        line-height: 30px;
+        width: 400px !important;
+    }
+    .btn {
+        position: relative;
+        left: 3% !important;
+    }
+    .details {
+        left: 40% !important;
+    }
+    .learning {
+        flex-direction: row !important;
+        height: 400px !important;
+    }
+    .manage {
+        text-align: left !important;
+        font-size: 18px !important;
+    }
+    .manageone {
+        text-align: left !important;
+    }
+    .courses {
+        height: 300px !important;
+    }
+    .boxing {
+        flex-direction: row !important;
+    }
+    .seconddetails {
+        flex: 1 !important;
+    }
+    .firstdetails {
+        flex: 1 !important;
+    }
+    #navigation {
+        display: flex !important;
+    }
+    .navigation {
+        display: none;
+    }
+    .toggle {
+        display: none !important;
+    }
+    #nav-menu {
+        justify-content: space-around !important;
+        align-items: center;
+    }
+    .desktopmenu {
+        justify-content: space-around !important;
+        align-items: center;
+    }
+}
