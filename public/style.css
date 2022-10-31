@@ -9,7 +9,7 @@ body {
     /* height: calc(100vh - 500px); */
     color: white;
     overflow-x: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 .homeimage {
