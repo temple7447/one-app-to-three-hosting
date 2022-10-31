@@ -97,6 +97,7 @@ app.use('/', DepartmentRouter)
 // app.use('/api',NewsRouter)
 // app.use('/Admin',searchRouter)
 app.use('/Admin', NotificationRouter)
+app.use('/Admin', EditRouter)
 app.use('/Admin', ClassRouter)
 
 const PORT = process.env.PORT || 3004;
