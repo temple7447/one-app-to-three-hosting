@@ -7,12 +7,8 @@
 body {
     width: 100vw;
     /* height: calc(100vh - 500px); */
-    height: 100vh;
-    overflow-x: hidden;
     color: white;
-    background-image: url("./civil-engineering.jpg");
-    background-position: center;
-    background-size: cover;
+    overflow-x: hidden;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -97,6 +93,10 @@ a,
     width: 100vw;
 }
 
+.courses {
+    background-image: url('./civil-engineering.jpg');
+}
+
 #myInput {
     background-image: url('/css/searchicon.png');
     background-position: 10px 12px;
@@ -178,7 +178,7 @@ a,
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: calc(100% - 100px);
     position: relative;
     transition: all 5s ease-in-out;
 }
