@@ -10,7 +10,6 @@ const MatriculationEvening = require('../Model/MatriculationModelEvening')
 const General = require('../Model/MorningHnd2Model')
 const EditImage = require('../Model/Image');
 const Notification = require('../Model/Notification')
-const Submittion = require("../utilities/storage_of_submit")
 
 const MorningHnd1Models = require('../Model/HND1')
 const MorningHnd2Models = require('../Model/HND2')
