@@ -89,3 +89,21 @@ const nav = document.getElementById("toggles")
 nav.addEventListener("click", () => {
     nav.classList.toggle("active")
 })
+
+const fullname = document.getElementById('fullname')
+const mat = document.getElementById('mat')
+const program = document.getElementById('program')
+const level = document.getElementById('level')
+const file = document.getElementById('file')
+
+
+const matriculation = mat.value;
+const fullnames = fullname.value;
+const programs = program.value;
+const levels = level.value;
+const files = document.value;
+
+if (matriculation == " " && fullname == " " && files == "") {
+    document.querySelector('.allfield').style.innerHtml = "All field must be filled"
+
+}
