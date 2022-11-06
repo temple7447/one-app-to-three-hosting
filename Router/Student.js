@@ -265,6 +265,24 @@ router.post('/studentform', (req, res) => {
     }
 })
 
+router.get('/studentform', (req, res) => {
+
+
+
+    Notification.find({}, (err, inform) => {
+
+        if (err) {
+            console.log(err)
+            res.status(500).send("it's a server err" + err)
+        } else {
+            res.render('index', { layout: 'index', list: inform, title: "COMPUTERLAB" })
+
+        }
+
+    })
+
+})
+
 
 router.post('/student', async(req, res) => {
     const { fullname, matriculation, level, morneven } = req.body;
