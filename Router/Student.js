@@ -275,7 +275,7 @@ router.get('/studentform', (req, res) => {
             console.log(err)
             res.status(500).send("it's a server err" + err)
         } else {
-            res.render('index', { layout: 'index', list: inform, title: "COMPUTERLAB" })
+            res.render('hnd2assignment', { layout: 'index', list: inform, title: "COMPUTERLAB" })
 
         }
 
