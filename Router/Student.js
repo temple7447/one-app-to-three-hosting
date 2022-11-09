@@ -34,7 +34,7 @@ const tileheader = "COMPUTERLAB"
 
 
 
-router.get('/studentform', (req, res) => {
+router.post('/studentform', (req, res) => {
     const { morneven, level, department } = req.body;
     // CIVIL
     if (morneven == "MORNING" && level == "HND2" && department == "CIVIL") {
@@ -265,24 +265,22 @@ router.get('/studentform', (req, res) => {
     }
 })
 
-// router.get('/studentform', (req, res) => {
+
+router.get('/studentform', (req, res) => {
 
 
+    Notification.find({}, (err, notification) => {
+        if (err) {
+            console.log(err)
+            res.status(500).send("it's a server err" + err)
+        } else {
 
-//     Notification.find({}, (err, inform) => {
+            res.render('hnd2assignment', { layout: 'index', list: notification, title: tileheader, department: "CIVIL ENGINEERING HND2" })
+        }
+    })
 
-//         if (err) {
-//             console.log(err)
-//             res.status(500).send("it's a server err" + err)
-//         } else {
-//             if
-//             res.render('hnd2assignment', { layout: 'index', list: inform, title: "COMPUTERLAB" })
+})
 
-//         }
-
-//     })
-
-// })
 
 
 router.post('/student', async(req, res) => {
