@@ -8,7 +8,7 @@
 body {
     width: 100vw;
     /* height: calc(100vh - 500px); */
-    color: white;
+    /* color: white; */
     overflow-x: hidden;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
